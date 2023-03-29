@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Hubballi', sans-serif;
+    box-sizing: border-box;
+}
+
+.banner {
+    height: 455px;
+    background-color: #e25d5e;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.banner-left {
+    background: url("image/banner-img.png") no-repeat;
+    height: 495px;
+    width: 743px;
+}
+
+.banner-right {
+    background: url("image/banner-img.png") no-repeat;
+    transform: scale(-1, 1);
+    height: 495px;
+    width: 743px;
+}
+
+.banner p {
+    font-size: 98px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-shadow: #000 1px 0 5px;
+    ;
+}
+
+.main-menu {
+    height: 40px;
+    font-size: 18px;
+    padding-top: 20px;
+    background: #e25d5e;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1592px;
+    margin: 0px auto;
+}
+
+.menu-wrapper p {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/*Wrapper*/
+.wrapper{
+    max-width: 1600px;
+    margin: 20px auto;
+}
+
+.filter{
+    max-width: 250px;
+    font-size: 18px;
+    float: left;
+}
+.filter ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.filter ul li{
+    margin-top: 12px;
+    margin-left: 50px;
+}
+
+.object{
+    max-width: 1350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    margin: 50px;
+}
+
+.object div{
+    /*border: 1px solid #000;*/
+    width: 384px;
+    height: 370px;
+    margin-top: 50px;
+    position: relative;
+}
+.object div p a{
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.object div img{
+    max-width: 100%;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+}
+
+/* FOOTER */
+footer {
+    background-color: #c2c2c2;
+    height: 180px;
+    text-align: center;
+    color: #000000;
+    font-size: 22px;
+    margin: 20px auto;
+    margin-bottom: 0px;
+    padding-top: 40px;
+
+}
+
+footer p {
+    padding-top: 28px;
+    font-size: 18px;
+}
+
+footer p:nth-child(1) {
+    float: left;
+    margin-left: 200px;
+}
+
+footer p:nth-child(2) {
+    float: right;
+    margin-right: 200px;
+}
+
+/* сетка подвала */
+[class^="box-"] {
+    /* border: 1px solid black; */
+    display: grid;
+    place-items: end;
+}
+
+.container {
+    /* margin-top: 20px; */
+    display: grid;
+    gap: 10px;
+    height: 100px;
+    /* justify-items:end; */
+    grid-template-columns: auto 400px 400px;
+    grid-template-areas:
+        "void o-projecte we-socials"
+        "copyright writeus socialicons";
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.box-1 {
+    grid-area: copyright;
+    justify-self: start;
+    font-size: 26px;
+}
+
+.box-2 {
+    grid-area: o-projecte;
+}
+
+.box-3 {
+    grid-area: we-socials;
+}
+
+.box-4 {
+    grid-area: writeus;
+}
+
+.box-5 {
+    grid-area: socialicons;
+    display: inline;
+    text-align: right;
+
+}
+
+.box-5 img {
+    width: 40px;
+    margin: 5px;
+
+}
+
+.box-void {
+    grid-area: void;
+}

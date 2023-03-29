@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- ТЕСТОВЫЙ ФАЙЛ ЧТОБЫ НАВЕРСТАТЬ БЛОК, МОЖНО УДАЛИТЬ ПРИ НЕНАДОБНОСТИ. -->
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .koshmar {
+            border: #000 1px solid;
+        }
+
+        .container-foto {
+            display: grid;
+            gap: 10px;
+            height: 100px;
+            justify-items: center;
+            grid-template-columns: auto 150px;
+            grid-template-areas:
+                "Big name"
+                "Big factory"
+                "Big mini-foto";
+        }
+
+        .box-Big {
+            /* justify-self: start; */
+            grid-area: Big;
+            border: rgb(239, 255, 11) 1px solid;
+        }
+
+        .box-name {
+            grid-area: name;
+            border: rgb(51, 255, 0) 1px solid;
+        }
+
+        .box-factory {
+            grid-area: factory;
+            border: rgb(25, 0, 255) 1px solid;
+        }
+
+        .box-mini-foto {
+            grid-area: mini-foto;
+            height: 343px;
+            width: 740px;
+            border: red 1px solid;
+        }
+
+        .box-mini-foto img {
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="koshmar">
+        <div class="container-foto">
+            <div class="box-Big">
+                <img src="image/1.png" alt="">
+            </div>
+            <div class="box-name">
+                <h1>Грузовик ЗИЛ-130</h1>
+            </div>
+            <div class="box-factory">
+                <h2>Производство:</h2>
+                <p>"Запорожсталь" СССР,1960-годы.</p>
+            </div>
+            <div class="box-mini-foto">
+                <img src="image/2.png">
+                <img src="image/2.png">
+                <img src="image/2.png">
+                <img src="image/2.png">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
