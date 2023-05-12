@@ -100,42 +100,44 @@
     margin: 20px auto;
 }
 
-.xux {
-    margin: 150px auto;
+
+/* грид */
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 600px 200px;
+    gap: 14px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Title Title Date Date"
+        "Photo Photo Photo Photo"
+        "Text Text Text Text";
 }
 
-.xux div {
-    width: 1364px;
-    height: 861px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 25px 0;
-    display: block
+.Title {
+    justify-self: start;
+    grid-area: Title;
 }
 
-.xux div p {
-    font-size: 16pt;
+.Date {
+    justify-self: end;
+    grid-area: Date;
 }
 
-.xux div p:nth-child(1) {
-    float: left;
-}
-
-.xux div p:nth-child(2) {
-    float: right;
-}
-
-.xux div p:nth-child() {
-    margin: 5px;
+.Photo {
+    grid-area: Photo;
+    overflow: hidden;
+    justify-self: center;
 }
 
 
-.xux div img {
-    max-width: 75%;
+.Text {
+    grid-area: Text;
+}
+
+.card .Photo img {
     object-fit: cover;
-    margin: auto;
-    display: block;
+    max-height: 100%;
 }
 
 /* FOOTER */
@@ -221,29 +223,3 @@ footer p:nth-child(2) {
 .box-void {
     grid-area: void;
 }
-
-/* грид */
-.card {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50px 600px 200px;
-  gap: 14px 2px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "Title Title Date Date"
-    "Photo Photo Photo Photo"
-    "Text Text Text Text";
-}
-
-.Title {
-  justify-self: start;
-  grid-area: Title;
-}
-
-.Date {
-  justify-self: end;
-  grid-area: Date;
-}
-
-.Photo { grid-area: Photo; }
-
-.Text { grid-area: Text; }
