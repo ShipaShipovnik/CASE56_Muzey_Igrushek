@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Hubballi', sans-serif;
@@ -66,61 +66,72 @@
 }
 
 /*nadpisi*/
-.nadpisi{
+.nadpisi {
     width: 1750px;
     margin: 50px;
-    
+
 }
 
-.nadpisi p:nth-child(1){
+.nadpisi p:nth-child(1) {
     float: left;
     font-size: 16pt;
 }
 
-.nadpisi p:nth-child(2){
+.nadpisi p:nth-child(2) {
     float: right;
     margin-right: 0px;
     font-size: 16pt;
 }
 
-.nadpisi p:nth-child(3){
+.nadpisi p:nth-child(3) {
     float: right;
     margin-right: 20px;
     font-size: 16pt;
 }
 
-.nadpisi p a{
+.nadpisi p a {
     text-decoration: none;
     color: #000;
 }
+
 /*Wrapper*/
-.wrapper{
+.wrapper {
     max-width: 1400px;
     margin: 20px auto;
 }
-.xux{
+
+.xux {
     margin: 150px auto;
 }
-.xux div{
+
+.xux div {
     width: 1364px;
     height: 861px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 25px 0;
+    display: block
 }
 
-.xux div p{
+.xux div p {
     font-size: 16pt;
-    text-transform:uppercase;
 }
 
-/*
-.xux div p:nth-child(2){
+.xux div p:nth-child(1) {
+    float: left;
 }
-*/
 
-.xux div img{
+.xux div p:nth-child(2) {
+    float: right;
+}
+
+.xux div p:nth-child() {
+    margin: 5px;
+}
+
+
+.xux div img {
     max-width: 75%;
     object-fit: cover;
     margin: auto;
@@ -210,3 +221,4 @@ footer p:nth-child(2) {
 .box-void {
     grid-area: void;
 }
+
