@@ -65,11 +65,51 @@
     text-transform: uppercase;
 }
 
-/*nadpisi*/
+
+/* надписи грид */
+.Nadpisi {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    gap: 0px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "News FirstNew FirstOld";
+    width: 1750px;
+    height: 50px;
+    margin: 35px auto 10px;
+    border: #07bb25 1px solid;
+    align-items: center;
+}
+
+.Nadpisi p a {
+    text-decoration: none;
+    color: #000;
+}
+
+.News {
+    justify-self: start;
+    grid-area: News;
+    flex-grow: 1;
+    font-size: 16pt;
+}
+
+.FirstNew {
+    grid-area: FirstNew;
+    font-size: 16pt;
+}
+
+.FirstOld {
+    grid-area: FirstOld;
+    font-size: 16pt;
+}
+
+
+/* nadpisi
 .nadpisi {
     width: 1750px;
     margin: 50px;
-
+    border: #07bb25 1px solid;
 }
 
 .nadpisi p:nth-child(1) {
@@ -92,36 +132,41 @@
 .nadpisi p a {
     text-decoration: none;
     color: #000;
-}
+} */
 
 /*Wrapper*/
 .wrapper {
     max-width: 1400px;
     margin: 20px auto;
+    border: #e25d5e 1px solid;
 }
 
-
-/* грид */
+/* грид постов*/
 .card {
+    border: #5557d6 1px solid;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50px 600px 200px;
     gap: 14px 2px;
     grid-auto-flow: row;
     grid-template-areas:
-        "Title Title Date Date"
-        "Photo Photo Photo Photo"
-        "Text Text Text Text";
+        "Title Title Date"
+        "Photo Photo Photo"
+        "Text Text Text";
 }
 
 .Title {
     justify-self: start;
     grid-area: Title;
+    font-size: 16pt;
+    align-self: end;
 }
 
 .Date {
     justify-self: end;
     grid-area: Date;
+    align-self: end;
+    font-size: 16pt;
 }
 
 .Photo {
@@ -133,6 +178,7 @@
 
 .Text {
     grid-area: Text;
+    font-size: 14pt;
 }
 
 .card .Photo img {
