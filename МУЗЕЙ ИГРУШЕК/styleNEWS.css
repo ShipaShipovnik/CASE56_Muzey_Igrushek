@@ -82,9 +82,12 @@
     align-items: center;
 }
 
-.Nadpisi p a {
+.Nadpisi a {
     text-decoration: none;
     color: #000;
+}
+.Nadpisi p{
+    text-transform: uppercase;
 }
 
 .News {
