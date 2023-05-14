@@ -66,81 +66,21 @@
 }
 
 
-/* надписи грид */
-.Nadpisi {
-    display: flex;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px;
-    gap: 0px 20px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "News FirstNew FirstOld";
-    width: 1750px;
+
+.backarrow {
     height: 50px;
-    margin: 35px auto 10px;
-    /* border: #07bb25 1px solid; */
-    align-items: center;
+    margin: 30px 20px 10px;
+    font-size: 16pt;
 }
-
-.Nadpisi a {
+.backarrow a {
     text-decoration: none;
     color: #000;
 }
-.Nadpisi p{
-    text-transform: uppercase;
-}
-
-.News {
-    justify-self: start;
-    grid-area: News;
-    flex-grow: 1;
-    font-size: 16pt;
-}
-
-.FirstNew {
-    grid-area: FirstNew;
-    font-size: 16pt;
-}
-
-.FirstOld {
-    grid-area: FirstOld;
-    font-size: 16pt;
-}
-
-
-/* nadpisi
-.nadpisi {
-    width: 1750px;
-    margin: 50px;
-    border: #07bb25 1px solid;
-}
-
-.nadpisi p:nth-child(1) {
-    float: left;
-    font-size: 16pt;
-}
-
-.nadpisi p:nth-child(2) {
-    float: right;
-    margin-right: 0px;
-    font-size: 16pt;
-}
-
-.nadpisi p:nth-child(3) {
-    float: right;
-    margin-right: 20px;
-    font-size: 16pt;
-}
-
-.nadpisi p a {
-    text-decoration: none;
-    color: #000;
-} */
 
 /*Wrapper*/
 .wrapper {
     max-width: 1400px;
-    margin: 20px auto;
+    margin: 5px auto 50px auto;
     /* border: #e25d5e 1px solid; */
 }
 
@@ -149,7 +89,7 @@
     /* border: #5557d6 1px solid; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 600px 200px;
+    grid-template-rows: 50px 600px auto;
     gap: 14px 2px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -192,6 +132,9 @@
     text-decoration: none;
     color: #000;
 }
+.Text p{
+    text-indent:20px
+  }
 
 .card .Photo img {
     object-fit: cover;
