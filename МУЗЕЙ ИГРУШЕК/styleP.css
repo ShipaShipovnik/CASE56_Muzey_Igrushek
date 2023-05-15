@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Hubballi', sans-serif;
@@ -14,16 +14,22 @@
 }
 
 .banner-left {
-    background: url("image/banner-img.png") no-repeat;
+    background: url("image/banner-img1.png") no-repeat;
     height: 495px;
     width: 743px;
 }
 
 .banner-right {
-    background: url("image/banner-img.png") no-repeat;
+    background: url("image/banner-img1.png") no-repeat;
     transform: scale(-1, 1);
     height: 495px;
     width: 743px;
+}
+.banner-logo{
+    background: url("image/logotip-02-02.png") no-repeat;
+    background-position: 50% 20% ;
+    height: 495px;
+    width: 100%;;
 }
 
 .banner p {
